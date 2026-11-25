@@ -272,6 +272,14 @@ if (isFile){
   $("player").appendChild(f);
 }
 
+const videoBaixar = document.createElement("a");
+videoBaixar.className = "btn";
+videoBaixar.href = "https://drive.google.com/drive/folders/10necgmo9j5zSf1VtrtCXSPQa--HWkXTz?usp=drive_link";
+videoBaixar.target = "_blank";
+videoBaixar.rel = "noopener";
+videoBaixar.textContent = "Baixar vídeo";
+$("actions").appendChild(videoBaixar);
+
 /* Abertura: laço desfaz → papel se abre → vídeo aparece */
 const stage = document.body;
 function unwrap(){
